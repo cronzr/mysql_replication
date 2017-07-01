@@ -1,0 +1,8 @@
+---
+- name: Install MySQL with replication
+  hosts: mysql0:mysql1
+  user: vagrant
+  sudo: True
+  roles:
+    - backend
+    - frontend
